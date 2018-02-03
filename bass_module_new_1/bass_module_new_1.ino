@@ -1,3 +1,11 @@
+// Code for the base module of the Nashesizer
+// Uses Teensy 3.6 with USB type 'All of the Above'
+// This version only integrates the joystick module
+// Schematic still being finalised
+// Requires the Wire, Keyboard and StopWatch libraries.
+// Coded in Arduino IDE 1.8.5 and Teensyduino 1.4.0
+
+
 ///////////////////////////////////////
 /// LIBRARIES + GLOBALS
 ///////////////////////////////////////
