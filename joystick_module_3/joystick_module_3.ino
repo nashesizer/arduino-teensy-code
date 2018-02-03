@@ -1,3 +1,9 @@
+// Code for the joystick module of the Nashesizer - an APEM 1000 Series Part No. 100113 joystick, 4 x NeoPixel minis and an Arduino Nano + passive components
+// Wired up according to the orginal schematic worked up by Mike Cook for the prototype version of the Nashesizer using the 'Alternate Switch Joystick' wiring
+// Requires the Wire, Adafruit_NeoPixel and StopWatch libraries.
+// Coded in Arduino IDE 1.8.5 and Teensyduino 1.4.0
+
+
 ///////////////////////////////////////
 /// LIBRARIES + GLOBALS
 ///////////////////////////////////////
@@ -65,6 +71,7 @@ void setup() {
     pixels.setPixelColor(i, pixels.Color(0, 0, 0)); // off
     pixels.show();
   }
+  delay(500);
 
 }
 
