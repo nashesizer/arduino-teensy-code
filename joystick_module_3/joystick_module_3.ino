@@ -12,6 +12,9 @@
 #include <Adafruit_NeoPixel.h>
 #include <StopWatch.h>
 
+/// Wire configuration
+int clockFrequency = 400000;
+
 /// Neopixels
 #ifdef __AVR__
 #include <avr/power.h>
@@ -56,6 +59,7 @@ void setup() {
 
   Serial.begin(9600);
   Wire.begin(1); // join i2c bus with address #1
+  Wire.setClock(clockFrequency);
   Wire.onRequest(requestEvent); // register event - function below
 
   pixels.begin(); // This initializes the NeoPixel library.
