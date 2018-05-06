@@ -112,7 +112,7 @@ void moveSliders() {
 
   while (needingToMove) {
     for (int i = 0; i < 4; i++) {
-      if ( abs(current[i] - target[i]) > 8 ) { // are we where we need to be
+      if ( abs(current[i] - target[i]) > 4 ) {  //8 // are we where we need to be
         current[i] = analogRead(analogueChannel[i]);
         //if(i==0) Serial.println(current[i]);
         if (abs(current[i] - target[i]) < 40 ) { // slow down a bit when approaching target
